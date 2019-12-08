@@ -132,7 +132,6 @@
           <div class="slider">
               <div><img src="img/img1.jpg" /></div>
               <div><img src="img/img2.jpg" /></div>
-              
             </div>
         </div>
       </div>
@@ -195,6 +194,50 @@
         </div>
       </div>
 
+      <!-- Project Three Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+              <div class="slider project-slider">
+                  <div class="image-bg" style="background-image:url(img/img1.jpg)"></div>
+                  <div class="image-bg" style="background-image:url(img/img2.jpg)"></div>
+                </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">Project Three</h4>
+                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else,
+                    along with a description.</p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project Four Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+              <div class="slider project-slider">
+                  <div class="image-bg" style="background-image:url(img/img2.jpg)"></div>
+                  <div class="image-bg" style="background-image:url(img/img1.jpg)"></div>
+                </div>
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Project Four</h4>
+                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These
+                    sections work well responsively as well, try this theme on a small screen!</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
     </div>
   </section>
 
@@ -309,83 +352,101 @@
 
     });
   </script>
+  <style>
+      .slick-dots {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+      }
+      .slick-dots li {
+        display: inline-block;
+      }
+      .slick-dots li button {
+        outline: none;
+        display: inline-block;
+        background-color: transparent;
+        border-width: 0;
+      }
+      .slick-dots li button span {
+        display: none;
+      }
+      .slick-dots li button:before {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        content: "";
+        background-color: #ffffff;
+      }
+      .slick-dots li.slick-active button:before {
+        background-color: #000000;
+      }
+      .slick-buttons {
+        background-color: transparent;
+        border-width: 0;
+      }
+      .slick-buttons {
+        position: absolute;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        z-index: 2;
+      }
+      .slick-buttons span {
+        display: none;
+      }
+      .slick-buttons.slick-prev:before,
+      .slick-buttons.slick-next:before {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-color: #ffffff;
+        content: "";
+      }
+      .slick-buttons.slick-prev {
+        left: 20px;
+      }
+      .slick-buttons.slick-prev:before {
+        border-top-width: 8px;
+        border-left-width: 8px;
+        border-top-style: solid;
+        border-left-style: solid;
+        transform: rotate(-45deg);
+      }
+      .slick-buttons.slick-next:before {
+        border-bottom-width: 8px;
+        border-right-width: 8px;
+        border-bottom-style: solid;
+        border-right-style: solid;
+        transform: rotate(-45deg);
+      }
+      .slick-buttons.slick-next {
+        right: 20px;
+      }
+      .slider img {
+        max-width: 100%;
+      }
+    </style>
+    <style>
+        .project-slider {
+          height: 100%;
+          min-height: 400px;
+        }
+        .project-slider .slick-list,
+        .project-slider .slick-track,
+        .project-slider .slick-slide,
+        .project-slider .slick-slide>div {
+          height: 100%;
+        }
+        .project-slider .image-bg {
+          height: 100%;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
 </body>
-<style>
-    .slick-dots {
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      width: 100%;
-      list-style: none;
-      text-align: center;
-      margin: 0;
-    }
-    .slick-dots li {
-      display: inline-block;
-    }
-    .slick-dots li button {
-      outline: none;
-      display: inline-block;
-      background-color: transparent;
-      border-width: 0;
-    }
-    .slick-dots li button span {
-      display: none;
-    }
-    .slick-dots li button:before {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 5px;
-      content: "";
-      background-color: #ffffff;
-    }
-    .slick-dots li.slick-active button:before {
-      background-color: #000000;
-    }
-    .slick-buttons {
-      background-color: transparent;
-      border-width: 0;
-    }
-    .slick-buttons {
-      position: absolute;
-      top: 50%;
-      transform: translate3d(0, -50%, 0);
-      z-index: 2;
-    }
-    .slick-buttons span {
-      display: none;
-    }
-    .slick-buttons.slick-prev:before,
-    .slick-buttons.slick-next:before {
-      display: block;
-      width: 20px;
-      height: 20px;
-      border-color: #ffffff;
-      content: "";
-    }
-    .slick-buttons.slick-prev {
-      left: 20px;
-    }
-    .slick-buttons.slick-prev:before {
-      border-top-width: 8px;
-      border-left-width: 8px;
-      border-top-style: solid;
-      border-left-style: solid;
-      transform: rotate(-45deg);
-    }
-    .slick-buttons.slick-next:before {
-      border-bottom-width: 8px;
-      border-right-width: 8px;
-      border-bottom-style: solid;
-      border-right-style: solid;
-      transform: rotate(-45deg);
-    }
-    .slick-buttons.slick-next {
-      right: 20px;
-    }
-    .slider img {
-      max-width: 100%;
-    }
-  </style>
 </html>
