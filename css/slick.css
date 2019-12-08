@@ -2419,37 +2419,4 @@ body.is-loading #banner > .inner {
             }
 
     }
-
-/* Main */
-
-#main {
-    background: #f1f1f1;
-    width: 100%;
-}
-
-    #main #header {
-        background: #e6e6e6;
-        padding: 1.15em 3.5em;
-        text-align: right;
-    }
-
-        #main #header h1 {
-            margin: 0;
-            font-size: 1em;
-        }
-
-        @media screen and (max-width: 980px) {
-
-            #main #header {
-                padding: 1.15em 2em;
-            }
-
-        }
-
-        @media screen and (max-width: 736px) {
-
-            #main #header {
-                text-align: center;
-            }
-
-        }
+    
